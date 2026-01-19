@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure API
-genai.configure(api_key="AIzaSyBr6Itj9Ajw9_pofxbxdkahqyK84tWss_M")
+genai.configure(api_key="api_key")
 
 # Model For Generating
 model = genai.GenerativeModel('gemini-1.5-pro')
@@ -38,4 +38,5 @@ if submit:
         st.subheader("Your Savings Plan")
         st.write(savings_plan)
     else:
+
         st.warning("Please fill all the fields correctly to generate your savings plan.")
