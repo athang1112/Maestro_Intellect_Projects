@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure API key
-genai.configure(api_key='AIzaSyBr6Itj9Ajw9_pofxbxdkahqyK84tWss_M')
+genai.configure(api_key='api_key')
 
 #Model For Generating
 model = genai.GenerativeModel('gemini-1.5-pro')
@@ -49,3 +49,4 @@ if st.button("Generate Trip Plan"):
         st.write(trip_plan)
     else:
         st.error("Please enter a valid trip destination.")
+
